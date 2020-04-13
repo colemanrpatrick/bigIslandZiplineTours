@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Lexend+Deca&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title>big island zipline</title>
+  </head>
+  <body>
+    <main>
+      <!-- ===== -->
+      <div id="masthead-top">
+        <ul class="phone">
+          <li>
+            <a href="#"><span>(Toll Free)</span> 1-866-482-9775</a>
+          </li>
+          <li>
+            <a href="#"><span>(Local)</span> 808-892-2082</a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li><a href="#" id="s-1"> <img src="images/facebook_twitter_youtube_instagram.png" alt=""></a></li>
+          <li><a href="#" id="s-2"> <img src="images/facebook_twitter_youtube_instagram.png" alt=""></a></li>
+          <li><a href="#" id="s-3"> <img src="images/facebook_twitter_youtube_instagram.png" alt=""></a></li>
+          <li><a href="#" id="s-4"> <img src="images/facebook_twitter_youtube_instagram.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="masthead">
+        <button type="button" name="button" class="menu-btn" onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" id="menu-btn">
+          <hr class="menu-btn-hr-1" />
+          <hr class="menu-btn-hr-2" />
+          <hr class="menu-btn-hr-3" />
+        </button>
+        <a href="#" id="logo">
+            <!-- <img src="images/ziplineLogo.png" alt=""> -->
+            <img id='logo-1' src="images/bigIslandIcon.png"/>
+            <img id='logo-2' src="images/zipline-logo.png" alt="">
+            <h1>big island <br /> <span>zipline tours</span></h1>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">cart</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ===== -->
+      <div id="checkpoint-first" class="checkpoint-first">
+        <div id="banner">
+        <img class="zipliner delayed-img" src="images/big-island-zipline-tours-banner.jpg" alt="">
+          <header class="banner-header">
+            <h2>"humanizing tagline"<br /> <span>not just keywords</span></h2>
+          </header>
+          <a href="#" id="book-now"><p>reservations</p><i><span class="material-icons">keyboard_arrow_down</span></i></a>
+          <script>
+          $("#book-now").on("click",function(){
+            $('html,body').animate({scrollTop:$('#products-header').offset().top})
+          })
+          </script>
+        </div>
+      </div>
+      <!-- ===== -->
+      <div class="checkpoint">
+        <div id="products-header">
+          <h3>choose from the zipline article-sections below</h3>
+        </div>
+        <div id="products">
+          <div class="product-container">
+            <div class="product" id="product-1">
+              <button type="button" class="detail-btn" onclick="idToggle('dtl-1','active')"><span class="material-icons">help_outline</span></button>
+                <img src="images/hawaii-forest-trail-kohala-zipline.jpg" alt="" class="delayed-img">
+                <h3>Kohala Canopy Adventure</h3>
+                <ul>
+                  <li>from</li>
+                  <li><span>$000.00</span>
+                </ul>
+                <a href="#">book now</a>
+            </div>
+          </div>
+          <div class="product-container">
+            <div class="product" id="product-2">
+              <button type="button" class="detail-btn" onclick="idToggle('dtl-2','active')"><span class="material-icons">help_outline</span></button>
+                <img src="images/hawaii-forest-and-trail-zip-n-dip.jpg" alt="" class="delayed-img">
+                <h3>Kohala Zip & Dip</h3>
+                <ul>
+                  <li>from</li>
+                  <li><span>$000.00</span>
+                </ul>
+              <a href="#">book now</a>
+            </div>
+          </div>
+        </div>
+        <span id="alt-text">more ziplines coming soon!</span>
+      </div>
+      <!-- ======== -->
+      <div class="detail-window" id="dtl-1">
+        <div class="detail">
+          <header><h3>Kohala Canopy Adventure</h3>
+            <button type="button" name="button" onclick="idToggle('dtl-1','active')"><span class="material-icons">close</span></button>
+          </header>
+          <article>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <ul><li>duration<span>0 hours</span></li><li>retail<span class="retail">$000.00</span></li><li>discount<span class="discount">$000.00</span></li></ul>
+          <a href="#">book now</a>
+        </div>
+      </div>
+      <!-- ======== -->
+      <div class="detail-window" id="dtl-2">
+        <div class="detail">
+          <header><h3>Kohala Zip & Dip</h3> <button type="button" name="button" onclick="idToggle('dtl-2','active')"><span class="material-icons">close</span></button>
+          </header>
+          <article>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <ul><li>duration<span>0 hours</span></li><li>retail<span class="retail">$000.00</span></li><li>discount<span class="discount">$000.00</span></li></ul>
+          <a href="#">book now</a>
+        </div>
+      </div>
+      <!-- ===== -->
+      <!-- ================================================================================ -->
+      <div class="article-section-container">
+      <div class="article-section">
+        <section>
+          <div class="article-section-img">
+
+            <img src="images/hawaii-forest-trail-canopy.jpg" alt="" id="article-section-img-1" class="delayed-img">
+          </div>
+          <article>
+            <div id="triangle-1"></div>
+            <header>header text goes here</header>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          </article>
+        </section>
+      </div>
+      <!-- ================================================================================ -->
+        <div class="article-section" id="article-section-2">
+          <section>
+            <article>
+              <div id="triangle-2"></div>
+              <header>header text goes here</header>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </article>
+            <div class="article-section-img">
+              <img src="images/hawaii-forest-and-trail-bigisland-zipline.jpg"  alt="" id="article-section-img-2" class="delayed-img">
+            </div>
+          </section>
+        </div>
+        <!-- ================================================================================ -->
+        </div>
+      <div class="review-section">
+        <h2>trip advisor reviews</h2>
+        <div class="review">
+          <ul>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+          </ul>
+          <header>"Lorem ipsum dolor sit amet"</header>
+          <p>"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Date of experience: <b>Date 2020</b></p>
+        </div>
+        <div class="review">
+          <ul>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+          </ul>
+          <header>"Lorem ipsum dolor sit amet"</header>
+          <p>"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Date of experience: <b>Date 2020</b></p>
+        </div>
+        <div class="review">
+          <ul>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+            <li><i class="material-icons">radio_button_checked</i></li>
+          </ul>
+          <header>"Lorem ipsum dolor sit amet"</header>
+          <p>"consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Date of experience: <b>Date 2020</b></p>
+        </div>
+      </div>
+      <!-- ===================================== -->
+      <div class="coverage-section">
+        <h2>why book with us</h2>
+        <ul>
+          <li id="c-1">
+            <span>
+            <i class="material-icons icon-first">laptop</i>
+            <i class="material-icons icon-second">lock</i>
+            </span>
+            <header>safe and<br>secure</header>
+            <p>Online booking system with validated privacy protection</p>
+          </li>
+          <li id="c-2">
+            <span>
+              <i class="material-icons icon-first">event</i>
+              <i class="material-icons icon-second">call</i>
+            </span>
+            <header>same day<br>reservationst</header>
+            <p>Receive a full refund if cancellation is made at least 48 hours in advance</p>
+          </li>
+          <li id="c-3">
+            <span>
+              <i class="material-icons icon-first">sentiment_satisfied_alt</i>
+            </span>
+            <header>friendly<br>support</header>
+            <p>Receive your voucher the same day after booking your activity</p>
+          </li>
+          <li id="c-4">
+            <span>
+              <i class="material-icons icon-first">undo</i>
+              <i class="material-icons icon-second">attach_money</i>
+            </span>
+            <header>money back<br>guranteed</header>
+            <p>Our representatives will help you select the best activities and ensure 100% satisfaction</p>
+          </li>
+        </ul>
+      </div>
+      <!-- ========== footer ========== -->
+      <footer class="footer">
+        <ul>
+          <li class="footer-main">
+            <a href="#" id="footer-logo">
+                <!-- <img src="images/ziplineLogo.png" alt=""> -->
+                <img id='footer-logo-1' src="images/bigIslandIcon.png"/>
+                <img id='footer-logo-2' src="images/zipline-logo.png" alt="">
+                <h2>big island <br /> <span>zipline tours</span></h2>
+            </a>
+            <a href="tel:1-877-357-2480" class="footer-phone">(toll free) 877 357 2480</a>
+            <hr>
+            <a href="tel:1-877-357-2480" class="footer-phone">(local) 877 357 2480</a>
+          </li>
+          <li class="footer-nav">
+            <a href="#">home</a>
+            <hr>
+            <hr>
+            <a href="#">about</a>
+            <hr>
+            <a href="#">contact</a>
+            <hr>
+            <a href="#">cart</a>
+            <hr>
+          </li>
+          <li class="footer-nav">
+            <a href="#">site map</a>
+            <hr>
+            <a href="#">privacy policy</a>
+            <hr>
+            <a href="#">terms</a>
+            <hr>
+            <a href="#">login</a>
+            <hr>
+          </li>
+        </ul>
+        <p>Copyright (c) 2018 Copyright Holder All Rights Reserved.</p>
+      </footer>
+    </div>
+    <!-- ======================================== -->
+    </main>
+    <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="jquery.lazy-master/jquery.lazy.plugins.min.js"></script>
+    <script src="toggle.js"></script>
+    <script src="checkpoint.js"></script>
+    <script src="main.js"></script>
+    <script>
+    var $eventListener = (function () {
+        'use strict';
+        if ("ontouchstart" in document.documentElement === true) {
+            return "touchstart"
+        } else {
+            return "click";
+        }
+    }());
+    var menuCont = document.getElementById("main-nav");
+    var menuBtn = document.getElementById("menu-btn");
+
+    document.addEventListener($eventListener, function (event) {
+        if (!menuCont.contains(event.target) && !visible(menuCont)) {
+            menuCont.className = "main-nav";
+            menuBtn.className = "menu-btn";
+        }
+    })
+    function visible(elem) {
+        return elem && (elem.offsetHeight === 0);
+    }
+    /*===========================================*/
+    var wrapper = document.getElementsByClassName('detail-window');
+    function toggleOutside(e){
+      if(e.target.classList.contains('active') && e.target !== e.target.firstChild){
+        idToggle(this.id,'active');
+      }
+    }
+
+    for (var i = 0 ; i < wrapper.length; i++) {
+      wrapper[i].addEventListener('click',toggleOutside,false);
+    }
+    /*===========================================*/
+    </script>
+  </body>
+</html>
